@@ -1,5 +1,5 @@
 ---
-title: "'예쁜 차'의 개념은 달라지는 것 같다"
+title: "예쁜 차의 개념은 달라지는 것 같다"
 description: "왜 모두가 예쁘다고 생각했던 디자인의 차들은 사라지는 걸까요?"
 pubDate: "2026-08-04"
 heroImage: "/uploads/luce-1.jpg"
