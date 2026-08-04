@@ -11,8 +11,8 @@ export default function (title: string, staticSlug: string) {
       .toLowerCase()
       // replace spaces
       .replace(/\s+/g, '-')
-      // remove special characters
-      .replace(/[^\w-]/g, '')
+      // remove special characters (한글 범위 가-힣 추가)
+      .replace(/[^\w-가-힣]/g, '')
       // remove leading & trailing separtors
       .replace(/^-+|-+$/g, '')
   )
