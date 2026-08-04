@@ -4,6 +4,7 @@ description: "왜 모두가 예쁘다고 생각했던 디자인의 차들은 사
 pubDate: "2026-08-04"
 heroImage: "/uploads/luce-1.jpg"
 category: "traffics"
+slug: "luce-car-design"
 tags:
   - 자동차
   - 디자인
