@@ -22,6 +22,7 @@ const storeSchema = z.object({
     badge: z.string().optional(),
     checkoutUrl: z.string().optional(),
     heroImage: z.string().optional(),
+    category: z.string().optional(),
 });
 
 export type BlogSchema = z.infer<typeof blogSchema>;
