@@ -20,6 +20,9 @@ collections_config:
     path: src/content/blog
     icon: event_available
     disable_url: false
+    _inputs:
+      $.tags:
+        cascade: true
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -44,6 +47,9 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+_inputs:
+  $.tags:
+    cascade: true
 timezone: Asia/Seoul
 markdown:
   engine: commonmark
