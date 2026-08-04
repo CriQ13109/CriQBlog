@@ -1,4 +1,5 @@
 import { z, defineCollection } from "astro:content";
+
 const blogSchema = z.object({
     title: z.string(),
     description: z.string(),
@@ -6,9 +7,11 @@ const blogSchema = z.object({
     updatedDate: z.string().optional(),
     heroImage: z.string().optional(),
     badge: z.string().optional(),
+    category: z.string().optional(),
     tags: z.array(z.string()).refine(items => new Set(items).size === items.length, {
         message: 'tags must be unique',
     }).optional(),
+    author: z.string().default("CriQ"), // 👈 작성자 필드 추가 (기본값 "CriQ")
 });
 
 const storeSchema = z.object({
