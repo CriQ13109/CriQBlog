@@ -6,7 +6,7 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 
 export interface Props extends BlogSchema {}
 
-const { title, description, pubDate, updatedDate, heroImage, badge, tags = [], author } = Astro.props; // 👈 author 추출
+const { title, description, pubDate, updatedDate, heroImage, badge, tags = [], author } = Astro.props; 
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll");
 import { Image } from "astro:assets";
@@ -21,7 +21,7 @@ import { Image } from "astro:assets";
       <!-- 💡 날짜 및 작성자 표시 -->
       <div class="flex items-center gap-2 text-sm opacity-80 my-2">
         {pubDate && <time>{displayDate}</time>}
-        {author && <span>• ✍️ {author}</span>}
+        {author && <span>•  {author}</span>}
       </div>
 
       {badge && <div class="badge badge-secondary my-1">{badge}</div>}
