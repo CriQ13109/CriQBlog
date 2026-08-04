@@ -4,8 +4,9 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
 
+// 1. 날짜 정렬 시 문자열/Date 타입 차이로 인한 정렬 오류 방지 (new Date 사용)
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
 );
 
 const last_posts = posts.slice(0, 5);
@@ -29,6 +30,7 @@ const last_posts = posts.slice(0, 5);
       </a>
     </div>
   </div>
+
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-6">최신 게시물</div>
   </div>
@@ -45,9 +47,11 @@ const last_posts = posts.slice(0, 5);
             title={post.data.title}
             img={post.data.heroImage}
             desc={post.data.description}
+            /* ✨ slug 태그가 없어도 createSlug가 title 기반 한글 주소를 반환합니다 */
             url={"/blog/" + createSlug(post.data.title, post.slug)}
             target="_self"
             badge={post.data.badge}
+            author={post.data.author}
           />
           <div class="divider my-0" />
         </>
