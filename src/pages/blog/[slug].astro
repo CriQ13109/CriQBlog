@@ -2,14 +2,23 @@
 import { CollectionEntry, getCollection } from "astro:content";
 import { BlogSchema } from "../../content/config";
 import PostLayout from "../../layouts/PostLayout.astro";
-import createSlug from "../../lib/createSlug"
+import createSlug from "../../lib/createSlug";
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("blog");
-  return postEntries.map((entry) => ({
-    params: { slug: createSlug(entry.data.title, entry.slug) },
-    props: { entry },
-  }));
+
+  return postEntries.map((entry) => {
+    // createSlug의 결과가 혹시라도 빈 값일 경우를 대비해 2중 검증
+    const generatedSlug = createSlug(entry.data.title, entry.slug);
+    const finalSlug = generatedSlug && generatedSlug.trim() !== "" 
+      ? generatedSlug 
+      : (entry.slug || "post");
+
+    return {
+      params: { slug: finalSlug },
+      props: { entry },
+    };
+  });
 }
 
 interface Props {
