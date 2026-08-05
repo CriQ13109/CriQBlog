@@ -3,5 +3,5 @@
 
 export const SITE_TITLE = 'CriQTech';
 export const SITE_DESCRIPTION = 'The Endless Challenge';
-export const GENERATE_SLUG_FROM_TITLE = true
+export const GENERATE_SLUG_FROM_TITLE = false
 export const TRANSITION_API = true
