@@ -20,7 +20,8 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
             height={422}
             format="webp"
             alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
+            /* 💡 aspect-[16/9]와 object-cover로 비율 및 꽉 차게 자르기 통일 */
+            class="max-w-full md:max-w-[13rem] aspect-[16/9] object-cover rounded-lg"
           />
         )
       }
@@ -32,6 +33,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
         
         <p class="py-1 text-1xl">{desc}</p>
 
+        <!-- 글 설명 아래 작고 깔끔한 날짜 및 작성자 -->
         <div class="text-xs text-base-content/60 mt-1 flex items-center gap-1.5 font-normal">
           {pubDate && <time>{displayDate}</time>}
           {pubDate && author && <span>•</span>}
