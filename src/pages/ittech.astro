@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog"))
   .filter((post) => post.data.category === "ittech")
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
 <BaseLayout title="IT / Tech" sideBarActiveItemID="ittech">
@@ -18,14 +18,20 @@ const posts = (await getCollection("blog"))
       <div class="py-10 text-base-content/60">아직 작성된 글이 없습니다.</div>
     ) : (
       posts.map((post) => (
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
+        <>
+          <HorizontalCard
+            title={post.data.title}
+            img={post.data.heroImage}
+            desc={post.data.description}
+            url={"/blog/" + post.slug}
+            target="_self"
+            badge={post.data.badge}
+            tags={post.data.tags}
+            author={post.data.author}
+            pubDate={post.data.pubDate}
+          />
+          <div class="divider my-0" />
+        </>
       ))
     )
   }
