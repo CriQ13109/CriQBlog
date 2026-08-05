@@ -1,10 +1,10 @@
 ---
 title: 샤프, 엔트리 스마트폰 'AQUOS wish6' 발표
 description: 샤프도 정말 꾸준합니다. AQUOS 시리즈의 새로운 보급형 스마트폰입니다.
-pubDate: 2026-08-05T00:00:00+09:00
+pubDate: 2026-08-05T15:27:01+09:00
 heroImage: /uploads/aquoswish6.jpg
 category: ittech
-author: H1Ra2
+author: CriQ
 tags:
   - News
   - Sharp
