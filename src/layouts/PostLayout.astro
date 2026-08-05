@@ -1,27 +1,48 @@
 ---
+// src/layouts/PostLayout.astro
 import { type BlogSchema } from "../content/config";
 import BaseLayout from "./BaseLayout.astro";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
+import { Image } from "astro:assets";
 
-export interface Props extends BlogSchema {}
+export interface Props extends BlogSchema {
+  prevPost?: any;
+  nextPost?: any;
+}
 
-const { title, description, pubDate, updatedDate, heroImage, badge, tags = [], author } = Astro.props; 
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  badge,
+  tags = [],
+  author = "CriQ",
+  prevPost,
+  nextPost,
+} = Astro.props;
+
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll");
-import { Image } from "astro:assets";
+
+// 작성자 영문/소문자 slug 변환 (예: "CriQ" -> "criq")
+const authorSlug = (author || "criq").toLowerCase().trim();
 ---
 
 <BaseLayout title={title} description={description} image={heroImage} ogType="article">
   <main class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
-      {heroImage && <Image width={750} height={422} format="webp" src={heroImage} alt={title} class="w-full mb-6" />}
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto w-full">
+      {heroImage && <Image width={750} height={422} format="webp" src={heroImage} alt={title} class="w-full mb-6 rounded-lg" />}
       <h1 class="title my-2 text-4xl font-bold">{title}</h1>
-      
-      <!-- 💡 날짜 및 작성자 표시 -->
+
       <div class="flex items-center gap-2 text-sm opacity-80 my-2">
         {pubDate && <time>{displayDate}</time>}
-        {author && <span>•  {author}</span>}
+        <span>•</span>
+        <a href={`/cv/${authorSlug}`} class="no-underline hover:underline font-medium text-base-content">
+          ✍️ {author}
+        </a>
       </div>
 
       {badge && <div class="badge badge-secondary my-1">{badge}</div>}
@@ -35,14 +56,44 @@ import { Image } from "astro:assets";
       }
       {
         updatedDate && (
-          <div>
-            {" "}
-            Last updated on <time>{updatedDate}</time>{" "}
+          <div class="text-xs text-base-content/60 mt-1">
+            Last updated on <time>{updatedDate}</time>
           </div>
         )
       }
-      <div class="divider my-2"></div>
+
+      <div class="divider my-4"></div>
+
       <slot />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 pt-6 border-t border-base-200 no-underline">
+        {
+          prevPost ? (
+            <a
+              href={`/blog/${prevPost.slug}`}
+              class="btn btn-outline justify-start flex-col items-start h-auto py-3 px-4 text-left font-normal normal-case"
+            >
+              <span class="text-xs text-base-content/60">← 이전 글</span>
+              <span class="font-bold truncate w-full text-sm mt-0.5">{prevPost.data.title}</span>
+            </a>
+          ) : (
+            <div />
+          )
+        }
+        {
+          nextPost ? (
+            <a
+              href={`/blog/${nextPost.slug}`}
+              class="btn btn-outline justify-end flex-col items-end h-auto py-3 px-4 text-right font-normal normal-case md:col-start-2"
+            >
+              <span class="text-xs text-base-content/60">다음 글 →</span>
+              <span class="font-bold truncate w-full text-sm mt-0.5">{nextPost.data.title}</span>
+            </a>
+          ) : (
+            <div />
+          )
+        }
+      </div>
     </article>
   </main>
 </BaseLayout>
