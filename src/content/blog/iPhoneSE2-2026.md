@@ -4,6 +4,7 @@ description: "작은 폰이 좋다고, 2020년에 나온 iPhone SE2를 2026년�
 pubDate: "2026-08-05"
 heroImage: "/uploads/DSC_0329.jpg"
 category: "ittech"
+author: "H1Ra2"
 tags:
   - Review
   - Apple
