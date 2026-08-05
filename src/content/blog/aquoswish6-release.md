@@ -1,16 +1,15 @@
 ---
-title: "샤프, 엔트리 스마트폰 'AQUOS wish6 발표'"
-description: "작은 폰이 좋다고, 2020년에 나온 iPhone SE2를 2026년에 구매해봤습니다."
-pubDate: "2026-08-05"
-heroImage: "/uploads/DSC_0329.jpg"
-category: "ittech"
-author: "H1Ra2"
+title: 샤프, 엔트리 스마트폰 'AQUOS wish6' 발표
+description: 샤프도 정말 꾸준합니다. AQUOS 시리즈의 새로운 보급형 스마트폰입니다.
+pubDate: 2026-08-05T00:00:00+09:00
+heroImage: /uploads/aquoswish6.jpg
+category: ittech
+author: H1Ra2
 tags:
   - News
   - Sharp
 ---
-
-샤프는 기본 모델 ‘AQUOS wish6’를 상품화했다. 샤프는 일본과 대만에서 9월 중순 이후 순차적으로 판매를 시작한다. 또한, 소프트뱅크는 기업용으로 9월 중순 이후에 출시할 예정이다.
+샤프는 기본 모델 ‘AQUOS wish6’를 공개했다. 샤프는 일본과 대만에서 9월 중순 이후 순차적으로 판매를 시작한다. 또한, 소프트뱅크는 기업용으로 9월 중순 이후에 출시할 예정이다.
 
 얇음과 강도를 동시에 갖춘 구조와 방수, 방진, 내성을 갖춘 5000mAh 성능의 배터리를 탑재했으며, 방범 알림 및 AI를 활용한 전화 지원 기능 등 안심하고 사용할 수 있는 기능도 갖추고 있다.
 
