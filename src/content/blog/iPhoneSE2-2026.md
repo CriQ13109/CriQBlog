@@ -17,9 +17,9 @@ tags:
 
 1주일 동안 메인폰으로 사용해봤습니다
 
-![](uploads/DSC_0269.jpg)
+![](/uploads/DSC_0269.jpg)
 
-![](uploads/DSC_0271.jpg)
+![](/uploads/DSC_0271.jpg)
 
 박스는 대략 이런식으로 생겼습니다
 
@@ -27,9 +27,9 @@ tags:
 
 
 
-![](uploads/DSC_0274.jpg)
+![](/uploads/DSC_0274.jpg)
 
-![](uploads/DSC_0286.jpg)
+![](/uploads/DSC_0286.jpg)
 
 2020년 출고 기기에 홈버튼이라니
 
@@ -53,9 +53,9 @@ tags:
 
 
 
-![](uploads/DSC_0303.jpg)
+![](/uploads/DSC_0303.jpg)
 
-![](uploads/DSC_0329.jpg)
+![](/uploads/DSC_0329.jpg)
 
 꽤 작습니다
 
@@ -73,9 +73,9 @@ tags:
 
 
 
-![](uploads/DSC_0355.jpg)
+![](/uploads/DSC_0355.jpg)
 
-![](uploads/DSC_0359.jpg)
+![](/uploads/DSC_0359.jpg)
 
 듀얼톤 플래시가 들어가서 모노톤보다 따듯한 색감을 냅니다. 사실 그닥 중요한건 아닙니다.
 
@@ -87,7 +87,7 @@ tags:
 
 
 
-![](uploads/SE-b4c7c025-07e8-4a4f-812e-19e1faa22876.jpg)
+![](/uploads/SE-b4c7c025-07e8-4a4f-812e-19e1faa22876.jpg)
 
 애플은 왜 온스크린 지문인식을 안넣을까요?
 
@@ -103,7 +103,7 @@ tags:
 
 
 
-![](uploads/DSC_0418.jpg)
+![](/uploads/DSC_0418.jpg)
 
 이 SE2는 배터리 효율이 76%? 그쯤인데 대단히 처참한 배터리타임을 자랑합니다.
 
@@ -113,9 +113,9 @@ tags:
 
 
 
-![](uploads/DSC_0392.jpg)
+![](/uploads/DSC_0392.jpg)
 
-![](uploads/DSC_0398.jpg)
+![](/uploads/DSC_0398.jpg)
 
 SE2 / 13 두대 다 최대밝기
 
@@ -125,7 +125,7 @@ SE2 / 13 두대 다 최대밝기
 
 
 
-![](uploads/DSC_0298.jpg)
+![](/uploads/DSC_0298.jpg)
 
 지금까지 빨리 뜨거워지고 베젤 넓고 배터리도 두시간을 못넘기는 SE2였습니다.
 
