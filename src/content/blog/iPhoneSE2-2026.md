@@ -1,16 +1,13 @@
 ---
-title: "2026년에 다시 써본 아이폰 SE2 : 네이버 블로그"
+title: "2026년에 다시 써본 아이폰 SE2"
 description: "작은 폰이 좋다고, 2020년에 나온 iPhone SE2를 2026년에 구매해봤습니다."
 pubDate: "2026-08-05"
-heroImage: "/uploads/luce-1.jpg"
+heroImage: "/uploads/DSC_0329.jpg"
 category: "ittech"
 tags:
-  - 리뷰
-  - iPhone
+  - Review
+  - Apple
 ---
-
-> ## Excerpt
-> 작은 폰이 들고다니기 좋을거같아서 다시 꺼낸 SE2 1주일 동안 메인폰으로 사용해봤습니다 박스는 대략 ...
 
 ---
 작은 폰이 들고다니기 좋을거같아서 다시 꺼낸 SE2
