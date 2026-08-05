@@ -1,5 +1,4 @@
 ---
-// src/layouts/PostLayout.astro
 import { type BlogSchema } from "../content/config";
 import BaseLayout from "./BaseLayout.astro";
 import dayjs from "dayjs";
@@ -27,7 +26,6 @@ const {
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll");
 
-// 작성자 영문/소문자 slug 변환 (예: "CriQ" -> "criq")
 const authorSlug = (author || "criq").toLowerCase().trim();
 ---
 
@@ -41,7 +39,7 @@ const authorSlug = (author || "criq").toLowerCase().trim();
         {pubDate && <time>{displayDate}</time>}
         <span>•</span>
         <a href={`/cv/${authorSlug}`} class="no-underline hover:underline font-medium text-base-content">
-          ✍️ {author}
+          by {author}
         </a>
       </div>
 
@@ -66,14 +64,15 @@ const authorSlug = (author || "criq").toLowerCase().trim();
 
       <slot />
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 pt-6 border-t border-base-200 no-underline">
+      <!-- 💡 이전 글 / 다음 글 (not-prose 및 group 클래스 추가로 호버 색상 해결) -->
+      <div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 pt-6 border-t border-base-200">
         {
           prevPost ? (
             <a
               href={`/blog/${prevPost.slug}`}
-              class="btn btn-outline justify-start flex-col items-start h-auto py-3 px-4 text-left font-normal normal-case"
+              class="group btn btn-outline justify-start flex-col items-start h-auto py-3 px-4 text-left font-normal normal-case w-full"
             >
-              <span class="text-xs text-base-content/60">← 이전 글</span>
+              <span class="text-xs opacity-60 group-hover:opacity-90">← 이전 글</span>
               <span class="font-bold truncate w-full text-sm mt-0.5">{prevPost.data.title}</span>
             </a>
           ) : (
@@ -84,9 +83,9 @@ const authorSlug = (author || "criq").toLowerCase().trim();
           nextPost ? (
             <a
               href={`/blog/${nextPost.slug}`}
-              class="btn btn-outline justify-end flex-col items-end h-auto py-3 px-4 text-right font-normal normal-case md:col-start-2"
+              class="group btn btn-outline justify-end flex-col items-end h-auto py-3 px-4 text-right font-normal normal-case w-full md:col-start-2"
             >
-              <span class="text-xs text-base-content/60">다음 글 →</span>
+              <span class="text-xs opacity-60 group-hover:opacity-90">다음 글 →</span>
               <span class="font-bold truncate w-full text-sm mt-0.5">{nextPost.data.title}</span>
             </a>
           ) : (
