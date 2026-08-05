@@ -41,7 +41,7 @@ tags:
 
 
 
-![](uploads/SE-0b1cfe6c-f17a-4b28-b17c-3e6896819ab3.jpg)
+![](/uploads/SE-0b1cfe6c-f17a-4b28-b17c-3e6896819ab3.jpg)
 
 발매 년도가 2020인지는 잘 모르겠는데 USB로 나가는 어뎁터를 주네요
 
