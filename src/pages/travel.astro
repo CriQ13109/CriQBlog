@@ -4,7 +4,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog"))
-  .filter((post) => post.data.category === "travel")
+  .filter((post) => {
+    const cat = post.data.category;
+    return Array.isArray(cat) ? cat.includes("travel") : cat === "travel";
+  })
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 

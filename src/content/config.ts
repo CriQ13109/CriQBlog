@@ -7,11 +7,12 @@ const blogSchema = z.object({
     updatedDate: z.string().optional(),
     heroImage: z.string().optional(),
     badge: z.string().optional(),
-    category: z.string().optional(),
+    // 💡 단일 문자열 및 문자열 배열 둘 다 허용
+    category: z.union([z.string(), z.array(z.string())]).optional(),
     tags: z.array(z.string()).refine(items => new Set(items).size === items.length, {
         message: 'tags must be unique',
     }).optional(),
-    author: z.string().default("CriQ"), // 👈 작성자 필드 추가 (기본값 "CriQ")
+    author: z.string().default("CriQ"),
 });
 
 const storeSchema = z.object({
