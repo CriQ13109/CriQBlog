@@ -10,5 +10,5 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind()]
   redirects: {
     '/cv': '/cv/criq',
-  },
+  }
 });
