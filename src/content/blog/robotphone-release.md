@@ -1,7 +1,7 @@
 ---
 title: "아너가 스마트폰에 짐벌을 집어넣었습니다."
 description: "어디서 저런 컨셉을 생각해냈는지는 모르겠는데, 일단 멋져보이긴 하네요."
-pubDate: 2026-08-013T19:35:21+09:00
+pubDate: 2026-08-13T19:34:51+09:00
 heroImage: /uploads/robotphone0.jpg
 category: ["ittech", "newsthink"]
 author: CriQ
