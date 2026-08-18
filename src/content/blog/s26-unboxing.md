@@ -1,7 +1,7 @@
 ---
 title: "갤럭시 S26+ 외관 살펴보기"
 description: "예쁨과 불편함 그 사이 어딘가"
-pubDate: 2026-08-18T17:04:00 (UTC +09:00)
+pubDate: 2026-08-18T17:04:00+09:00
 heroImage: /uploads/_DSC3600.jpg
 category: "ittech"
 author: H1Ra2
