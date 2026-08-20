@@ -2,7 +2,7 @@
 title: "갤럭시 S26+ 외관 살펴보기"
 description: "예쁨과 불편함 그 사이 어딘가"
 pubDate: 2026-08-18T17:04:00+09:00
-heroImage: /uploads/_DSC3600.jpg
+heroImage: ../../assets/uploads/_DSC3600.jpg
 category: "ittech"
 author: H1Ra2
 tags:
@@ -11,9 +11,9 @@ tags:
   - Mobile
 ---
 
-![](/uploads/_DSC3576.jpg)
+![](../../assets/uploads/_DSC3576.jpg)
 
-![](/uploads/_DSC3577.jpg)
+![](../../assets/uploads/_DSC3577.jpg)
 
 색상은 스카이블루입니다.
 
@@ -23,9 +23,9 @@ tags:
 
 
 
-![](/uploads/_DSC3585.jpg)
+![](../../assets/uploads/_DSC3585.jpg)
 
-![](/uploads/_DSC3605.jpg)
+![](../../assets/uploads/_DSC3605.jpg)
 
 박스 안에는 본체, 유심핀, CtoC 케이블, 간단 사용설명서가 들어있습니다.
 
@@ -33,17 +33,17 @@ tags:
 
 
 
-![](/uploads/_DSC3645.jpg)
+![](../../assets/uploads/_DSC3645.jpg)
 
-![](/uploads/_DSC3643.jpg)
+![](../../assets/uploads/_DSC3643.jpg)
 
 S25 시리즈와 외관상 가장 큰 차이점은 후면 카메라에 추가된 앰비언트 아일랜드 디자인이 되겠습니다.
 
 케이스를 안 쓰신다면 바닥에 뒀을때 카메라 높이 때문에 좀 거슬립니다.
 
-![](/uploads/_DSC3600.jpg)
+![](../../assets/uploads/_DSC3600.jpg)
 
-![](/uploads/_DSC3619.jpg)
+![](../../assets/uploads/_DSC3619.jpg)
 
 후면카메라는 위에서부터 순서대로 1,200만 화소 F2.2 초광각, 5,000만 화소 F1.8 광각, 1,000만 화소 F2.4 망원입니다.
 
@@ -51,9 +51,9 @@ S25 시리즈와 외관상 가장 큰 차이점은 후면 카메라에 추가된
 
 
 
-![](/uploads/_DSC3640.jpg)
+![](../../assets/uploads/_DSC3640.jpg)
 
-![](/uploads/_DSC3642.jpg)
+![](../../assets/uploads/_DSC3642.jpg)
 
 상단에는 노이즈 캔슬링용 2차 마이크, 디스플레이 쪽에는 리시버 홀,
 
