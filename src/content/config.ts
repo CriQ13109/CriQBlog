@@ -6,7 +6,8 @@ const blogSchema = ({ image }: { image: any }) =>
     description: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.string().optional(),
-    heroImage: image().optional(),
+    // 💡 문자열(public 경로)과 image()(assets 상대 경로) 둘 다 허용
+    heroImage: z.union([image(), z.string()]).optional(),
     badge: z.string().optional(),
     category: z.union([z.string(), z.array(z.string())]).optional(),
     tags: z
